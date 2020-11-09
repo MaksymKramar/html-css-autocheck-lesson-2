@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Задание 1 Список dl из пар dt и dd-->
+    <dl>
+        <dt>Тег span.
+            <dd>Универсальный контейнер для текстового контента.</dd>
+        </dt>
+        <dt>Тег pre.<dd>Сохранение пробелов и переносов.</dd></dt>
+        <dt>Тег sup и sub.<dd>Отображение символов в верхнем и нижнем индексе.</dd></dt>
+        <dt>Тег strong.<dd>Выделение важного слова или целой фразы внутри текста.</dd></dt>
+        <dt>Тег b.<dd>Визульное выделение текста более толстым шрифтом.</dd></dt>
+        <dt>Тег em.<dd>Семантически и визуально (курсив) выделяет текст.</dd></dt>   
+        <dt>Тег i.<dd>Визуально (курсив) выделяет текст.</dd></dt>
+        <dt>Тег address.<dd>Оборачивает теги с контентом об адресе или получателе.</dd></dt>
+    </dl>   
+    <!-- Задание 2 Тег time-->
+    <p>
+        Эпоха Unix стартовала в <time datetime="1970-01-01T00:00"> полночь на 01 января 1970 года</time>
+    </p>
+    <!-- Задание 3 Символьные подстановки.-->
+    <!-- в поисковеке ищем HTML символику -->
+    <span>&#174;</span>
+    <!-- Задание 4 Аудио.-->
+    <audio controls preload="none">
+        <source src="https://goit.ua/autocheck/bensound-summer.mp3" type="audio/mp3">
+    </audio>
+    <!-- Задание 5 Верстка таблицы. Теги таблицы и атрибут colspan.-->
+    <table>
+        <caption>Как ведут себя block, inline и inline-block</caption>
+        <thead>
+            <tr>
+                <th>/</th>
+                <th>block</th>
+                <th>inline</th>
+                <th>inline-block</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>height определяется</th>
+                <td colspan="3">высотой контента</td>
+            </tr>
+            <tr>
+                <th>width определяется</th>
+                <td>шириной родителя</td>
+                <td colspan="2">шириной контента</td>
+            </tr>
+            <tr>
+                <th>Можно ли задать height и width</th>
+                <td>можно</td>
+                <td>нельзя</td>
+                <td>можно</td>
+            </tr>
+            <tr>
+                <th>Как работает перенос на новую строку</th>
+                <td>всегда с новой строки</td>
+                <td colspan="2">только при заполнении ширины родителя</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
